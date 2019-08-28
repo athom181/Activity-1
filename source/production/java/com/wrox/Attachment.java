@@ -1,6 +1,6 @@
 package com.wrox;
 
-public class Attachment
+//public class Attachment
 {
     private String name;
 
