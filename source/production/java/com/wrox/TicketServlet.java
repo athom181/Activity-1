@@ -49,6 +49,12 @@ public class TicketServlet extends HttpServlet
             case "download":
                 this.downloadAttachment(request, response);
                 break;
+            case "update":
+                this.updateTicketForm(request, response);
+                break;
+            case "delete":
+                this.deleteTicketForm(request, response);
+                break;
             case "list":
             default:
                 this.listTickets(request, response);
@@ -67,6 +73,9 @@ public class TicketServlet extends HttpServlet
         {
             case "create":
                 this.createTicket(request, response);
+                break;
+            case "update":
+                this.updateTicket(request, response);
                 break;
             case "list":
             default:
